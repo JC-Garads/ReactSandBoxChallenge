@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const time = new Date().getHours();
-var greetings = "";
+let greetings;
 const customStyle = {
   color: ""
 };
-if (time >= 0 && time < 12) {
+if (time < 12) {
   greetings = "morning";
   customStyle.color = "red";
-} else if (time >= 12 && time < 18) {
+} else if (time < 18) {
   greetings = "afternoon";
   customStyle.color = "green";
 } else {
